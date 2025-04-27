@@ -18,50 +18,50 @@ else{
   console.log("두 수중에서 큰 값은" + num2 + "입니다.");
 }
 //2.
-let num_1 = 40 + Math.floor(Math.random() * 31);
-let num_2 = 40 + Math.floor(Math.random() * 31);
-console.log(num_1,num_2);
-if(num_1 > num_2)
+let numOne = 40 + Math.floor(Math.random() * 31);
+let numTwo = 40 + Math.floor(Math.random() * 31);
+console.log(numOne,numTwo);
+if(numOne > numTwo)
 {
-  console.log("2개의 수중에서 큰값은" + num_1 +",작은값은"+ num_2 + "입니다.");
+  console.log("2개의 수중에서 큰값은" +numOne +",작은값은"+ numTwo+ "입니다.");
 }
-else if(num_1 == num_2){
+else if(numOne == numTwo){
   console.log("두개의 숫자가 같습니다.");
 }
 else{
-  console.log("2개의 수중에서 큰값은," + num_2 +",작은값은"+num_1 + "입니다.");
+  console.log("2개의 수중에서 큰값은," + numTwo +",작은값은"+numOne + "입니다.");
 }
 //3
-let result =  Math.floor(Math.random() * 71);
-console.log(result);
+// let result =  Math.floor(Math.random() * 71);
+// console.log(result);
 
-if(result>= 95) { 
-  console.log("A+");
-}
-else if (result >= 90) { 
-  console.log("A");
-}
-//~80 => B
-else if (result >= 85) { 
-  console.log("B+");
-}
-else if (result >= 80) { 
-  console.log("B");
-}
-//~80 => B
-else if (result >= 75) { 
-  console.log("C+");
-}
-else if (result >= 70) { 
-  console.log("C");
-}
-//~80 => B
-else if (result >= 65) { 
-  console.log("D+");
-}
-else if (result >= 60) { 
-  console.log("D");
-}
-else {
-  console.log("F");
-}
+// if(result>= 95) { 
+//   console.log("A+");
+// }
+// else if (result >= 90) { 
+//   console.log("A");
+// }
+// //~80 => B
+// else if (result >= 85) { 
+//   console.log("B+");
+// }
+// else if (result >= 80) { 
+//   console.log("B");
+// }
+// //~80 => B
+// else if (result >= 75) { 
+//   console.log("C+");
+// }
+// else if (result >= 70) { 
+//   console.log("C");
+// }
+// //~80 => B
+// else if (result >= 65) { 
+//   console.log("D+");
+// }
+// else if (result >= 60) { 
+//   console.log("D");
+// }
+// else {
+//   console.log("F");
+// }
