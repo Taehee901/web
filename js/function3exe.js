@@ -18,11 +18,11 @@
 function sumUpTo(num){
   let sum = 0;
   for(let i = 1; i <= num; i++){
-    sum = num + i;
+    sum += i;
   }
   document.write(`<p>1부터 ${num}까지의 합은 ${sum}입니다.</p>`);
 }
-sumUpTo(5);
+sumUpTo(4);
 
 // function diff(numOne,numTwo){
 //   if(numOne > numTwo){
@@ -32,4 +32,4 @@ sumUpTo(5);
 //     document.write(`<p>두 수의 차는 ${numTwo} - ${numOne} = ${numTwo-numOne}</p>`);
 //   }
 // }
-// diff(17,34);
+// diff(17,37);
