@@ -5,19 +5,34 @@
 //4.반복문(537페이지 연습.읽어도 보고 연습도 해보고)
 
 // 1.
-let num1 = prompt("첫번째 수를 입력하세요");
-let num2 = prompt("두번째 수를 입력하세요");
-console.log(num1,num2);
-if(num1 > num2){
-  console.log("두 수중에서 큰값은" + num1 +"입니다.");
-}
-else if(num1 == num2){
-  console.log("두개의 숫자가 같습니다.");
+let num1, num2;
+
+num1 = prompt("수를 입력:");
+num2 = prompt("수를 입력:");
+if(num1>num2)
+{
+  console.log("두수중에서 큰값은" + num1 +"입니다.");
 }
 else{
-  console.log("두 수중에서 큰 값은" + num2 + "입니다.");
+  console.log("두수중에서 큰값은" + num2 +"입니다.");
+
 }
+
+// let num1 = prompt("첫번째 수를 입력하세요");
+// let num2 = prompt("두번째 수를 입력하세요");
+// console.log(num1,num2);
+// if(num1 > num2){
+//   console.log("두 수중에서 큰값은" + num1 +"입니다.");
+// }
+// else if(num1 == num2){
+//   console.log("두개의 숫자가 같습니다.");
+// }
+// else{
+//   console.log("두 수중에서 큰 값은" + num2 + "입니다.");
+// }
 //2.
+//flor - 소수점 버림
+// let numOne = Math.floor(Math.random() * 31) + 40; //40<=x<=70
 let numOne = 40 + Math.floor(Math.random() * 31);
 let numTwo = 40 + Math.floor(Math.random() * 31);
 console.log(numOne,numTwo);
@@ -32,36 +47,38 @@ else{
   console.log("2개의 수중에서 큰값은," + numTwo +",작은값은"+numOne + "입니다.");
 }
 //3
-// let result =  Math.floor(Math.random() * 71);
-// console.log(result);
+let result =  Math.floor(Math.random() * 71);
+console.log(result);
 
-// if(result>= 95) { 
-//   console.log("A+");
-// }
-// else if (result >= 90) { 
-//   console.log("A");
-// }
-// //~80 => B
-// else if (result >= 85) { 
-//   console.log("B+");
-// }
-// else if (result >= 80) { 
-//   console.log("B");
-// }
-// //~80 => B
-// else if (result >= 75) { 
-//   console.log("C+");
-// }
-// else if (result >= 70) { 
-//   console.log("C");
-// }
-// //~80 => B
-// else if (result >= 65) { 
-//   console.log("D+");
-// }
-// else if (result >= 60) { 
-//   console.log("D");
-// }
-// else {
-//   console.log("F");
-// }
+if(result>= 95) { 
+  console.log("A+");
+}
+else if (result >= 90) { 
+  console.log("A");
+}
+//~80 => B
+else if (result >= 85) { 
+  console.log("B+");
+}
+else if (result >= 80) { 
+  console.log("B");
+}
+//~80 => B
+else if (result >= 75) { 
+  console.log("C+");
+}
+else if (result >= 70) { 
+  console.log("C");
+}
+//~80 => B
+else if (result >= 65) { 
+  console.log("D+");
+}
+else if (result >= 60) { 
+  console.log("D");
+}
+else {
+  console.log("F");
+}
+//  sum += 1; => sum +1 같다
+
