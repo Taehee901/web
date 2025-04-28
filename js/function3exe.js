@@ -12,24 +12,24 @@
 //   }
 // }
 
-// max(10,17);
+// max(17,10);
 
 
-function sumUpTo(num){
-  let sum = 0;
-  for(let i = 1; i <= num; i++){
-    sum += i;
-  }
-  document.write(`<p>1부터 ${num}까지의 합은 ${sum}입니다.</p>`);
-}
-sumUpTo(4);
-
-// function diff(numOne,numTwo){
-//   if(numOne > numTwo){
-//     document.write(`<p>두 수의 차는 ${numOne} - ${numTwo} = ${numOne-numTwo}</p>`);
+// function sumUpTo(num){
+//   let sum = 0;
+//   for(let i = 1; i <= num; i++){
+//     sum += i;
 //   }
-//   else{
-//     document.write(`<p>두 수의 차는 ${numTwo} - ${numOne} = ${numTwo-numOne}</p>`);
-//   }
+//   document.write(`<p>1부터 ${num}까지의 합은 ${sum}입니다.</p>`);
 // }
-// diff(17,37);
+// sumUpTo(4);
+
+function diff(numOne,numTwo){
+  if(numOne > numTwo){
+    document.write(`<p>두 수의 차는 ${numOne-numTwo}</p>`);
+  }
+  else{
+    document.write(`<p>두 수의 차는 ${numTwo-numOne}</p>`);
+  }
+}
+diff(37,17);
