@@ -1,0 +1,22 @@
+//jsonData.js =>샘플데이터만들어주는 페이지 모카루(https://www.mockaroo.com/),salary,json타입
+//[]배열하는기호로 json 문자열만드는 규칙에 맞게 데이터를 가져온거 ->파싱가능,마지막 데이터는 ,제거
+let json =`[{"id":1,"first_name":"Jervis","last_name":"Drackford","email":"jdrackford0@printfriendly.com","gender":"Male","salary":4952},
+  {"id":2,"first_name":"Irita","last_name":"Reisin","email":"ireisin1@deviantart.com","gender":"Female","salary":3326},
+  {"id":3,"first_name":"Sari","last_name":"Swine","email":"sswine2@nationalgeographic.com","gender":"Female","salary":6726},
+  {"id":4,"first_name":"Gelya","last_name":"Sloat","email":"gsloat3@jalbum.net","gender":"Female","salary":4888},
+  {"id":5,"first_name":"Ingar","last_name":"McPhillimey","email":"imcphillimey4@auda.org.au","gender":"Male","salary":7266},
+  {"id":6,"first_name":"Nicolea","last_name":"Camillo","email":"ncamillo5@xing.com","gender":"Agender","salary":3668},
+  {"id":7,"first_name":"Wadsworth","last_name":"Maestro","email":"wmaestro6@ning.com","gender":"Male","salary":4611},
+  {"id":8,"first_name":"Janetta","last_name":"McGibbon","email":"jmcgibbon7@icio.us","gender":"Female","salary":4653},
+  {"id":9,"first_name":"Pauly","last_name":"Callan","email":"pcallan8@usda.gov","gender":"Polygender","salary":8164},
+  {"id":10,"first_name":"Sharla","last_name":"Mauchlen","email":"smauchlen9@sina.com.cn","gender":"Female","salary":7134},
+  {"id":11,"first_name":"Filbert","last_name":"Keveren","email":"fkeverena@dion.ne.jp","gender":"Male","salary":5249},
+  {"id":12,"first_name":"Janot","last_name":"McCorry","email":"jmccorryb@latimes.com","gender":"Female","salary":3342},
+  {"id":13,"first_name":"Daffi","last_name":"Osman","email":"dosmanc@hexun.com","gender":"Female","salary":4713},
+  {"id":14,"first_name":"Garnet","last_name":"Speare","email":"gspeared@sina.com.cn","gender":"Female","salary":6406},
+  {"id":15,"first_name":"Modestine","last_name":"Blockley","email":"mblockleye@prweb.com","gender":"Female","salary":5131},
+  {"id":16,"first_name":"Randa","last_name":"Boake","email":"rboakef@harvard.edu","gender":"Female","salary":7109},
+  {"id":17,"first_name":"Bryana","last_name":"Dumke","email":"bdumkeg@fotki.com","gender":"Female","salary":3295},
+  {"id":18,"first_name":"Neil","last_name":"Horrigan","email":"nhorriganh@japanpost.jp","gender":"Male","salary":3349},
+  {"id":19,"first_name":"Lesley","last_name":"Cleiment","email":"lcleimenti@squidoo.com","gender":"Bigender","salary":2033},
+  {"id":20,"first_name":"Cordy","last_name":"Males","email":"cmalesj@bluehost.com","gender":"Female","salary":7906}]`;
