@@ -5,16 +5,8 @@ let data = JSON.parse(json);//json문자열을 자바스크립트의 객체타�
 console.log(data);//객체.
 //deleteTr함수만들고 기능추가
 //button<삭제>템플릿.on~속성이 이벤트와 관련된 속성 onbl 더블클릭속성
+//삭제누르면 삭제
 let btnTemplate = "<button id= 'btnd' class='btn btn-danger' onclick = 'deleteTr(event)'>삭제</button>";
-
-
-
-
-
-
-
-
-
 
 //속성을 정의.
 let fields = ['id','first_name','gender','salary'];//배열에 들어있는 해당되는 요소만 td만들려고
@@ -106,6 +98,9 @@ console.log(makeTr({id:12,first_name:"kildong",email:"kildong@email.com"}));
 
 //deleteTr함수만들고 기능추가
 //btn 삭제 함수
-function deleteTr(){
-  
+//   document.querySelector('#btnd').addEventListener('click',function deleteTr(){
+// });
+
+function deleteTr(param1){
+  param1.target.parentElement.parentElement.remove();
 }
