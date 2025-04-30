@@ -6,7 +6,12 @@ console.log(data);//객체.
 //deleteTr함수만들고 기능추가
 //button<삭제>템플릿.on~속성이 이벤트와 관련된 속성 onbl 더블클릭속성
 //삭제누르면 삭제
-let btnTemplate = "<button id= 'btnd' class='btn btn-danger' onclick = 'deleteTr(event)'>삭제</button>";
+//var선언한것은 변수선언한거 위에 한것처럼 처리 => 에러찾기 힘듦
+//""속성 붙여쓰는게 나음
+let btnTemplate = "<button id='btnd' class='btn btn-danger' onclick = 'deleteTr(event)'>삭제</button>";
+
+//객체안에 선언 메소드
+
 
 //속성을 정의.
 let fields = ['id','first_name','gender','salary'];//배열에 들어있는 해당되는 요소만 td만들려고
@@ -22,6 +27,8 @@ for(let i = 0;i <data.length;i++)
 {
 elist += makeTr(data[i]);
 }
+// elist += '<th>삭제</th>'
+
 elist += "</tbody></table>";
 document.write(elist);
 
@@ -48,6 +55,10 @@ document.querySelector('button#searchBtn').addEventListener('click',function(){
 //2.select "change" fuction 실행함수
 document.querySelector('select#selectGender').addEventListener('change',function(){
   //searchValue
+  console.log(this);//이벤트핸들러안에서의 this
+  //let selectValue = this.value;
+  //함수도 매개값으로 올수 있다.
+  //문자열selectGender(?)
   let selectValue = document.querySelector("#selectGender").value;//selectGender 값을 가져와서 selectValue
   let select = "";//문자열 하나를 select 공간 저장
   for(let emp of data){
@@ -62,7 +73,7 @@ document.querySelector('select#selectGender').addEventListener('change',function
   }
 });
 
-console.clear();//로그 지우기.
+// console.clear();//로그 지우기.
 // for(let emp of data ){//배열하나하나씩 들고오겠다는 반복 변수로씀(?)data만큼 
 //   console.log(emp);
 // }
@@ -79,7 +90,7 @@ console.clear();//로그 지우기.
 // document.write(elist);
 
 
-console.clear();//로그 지우기.
+// console.clear();//로그 지우기.
 
 //tr을 생성하는 함수.
 function makeTr(emp={}){//emp tr만드는기능,오브젝트 매개값 들어옴,emp={}tr을 만들어주는 함수
@@ -93,7 +104,7 @@ function makeTr(emp={}){//emp tr만드는기능,오브젝트 매개값 들어옴
   str += "</tr>";
   return str;//str을 반환
 }//end of makeTr
-console.log(makeTr({id:12,first_name:"kildong",email:"kildong@email.com"}));
+// console.log(makeTr({id:12,first_name:"kildong",email:"kildong@email.com"}));
 // console.log(str);
 
 //deleteTr함수만들고 기능추가
@@ -101,6 +112,12 @@ console.log(makeTr({id:12,first_name:"kildong",email:"kildong@email.com"}));
 //   document.querySelector('#btnd').addEventListener('click',function deleteTr(){
 // });
 
-function deleteTr(param1){
-  param1.target.parentElement.parentElement.remove();
+// function deleteTr(param1){
+//   param1.target.parentElement.parentElement.remove();//tr - td - target위치
+// }
+//deleTr을 정의하는데 e는 매개 변수
+function deleteTr(e){
+  console.log(e);
+  //childElement하위요소
+  e.target.parentElement.parentElement.remove();//e기준으로 button태그의 기준으로 부모(상위)요소(감싸고 있는거)하위요소(자식요소)//remove화면에 지움
 }
