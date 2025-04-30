@@ -71,7 +71,7 @@ function createLi(fruitName, fruitPrice) {
   return li;
 } //end of createLi()
 
-
+//<li>삭제
 
 // //createElement():요소(태그)를 만듦,appendChild(),setAttribute(),querySelector()
 // let li = document.createElement("li");//<li/> 대소문자 태그 구분안함,createElement요소에서 만들어진 녀석들을 객체
