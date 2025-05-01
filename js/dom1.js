@@ -63,6 +63,14 @@ function createLi(fruitName, fruitPrice) {
     btn.parentElement.remove();
   }); //클릭이벤트 등록.
 
+  li.addEventListener('mouseover',function(){
+    li.style.backgroundColor = "cyan";
+  });
+  li.addEventListener('mouseout',function(){
+    li.style.backgroundColor = "";//원래값
+  });
+
+
   li.appendChild(sp1); //부모요소.자식요소 관계 추가,순서중요,선입선출
   li.appendChild(txt);
   li.appendChild(sp2);
